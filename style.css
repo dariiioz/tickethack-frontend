@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    background-image: ;
+    font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+        
+}
+
+#navbar {
+    border : 2px solid blue;
+    background-color: #eee;
+    padding: 10px;
+    text-align:;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#content {
+border : 2px solid red;
+text-align: center;
+display: grid;
+grid-template-rows: repeat(8, 1fr);
+grid-template-columns: repeat(12, 1fr);
+
+}
