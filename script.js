@@ -20,7 +20,11 @@ document.querySelector("#btnSearchDate").addEventListener("click", () => {
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
+                if (data.trips.length != 0) {
+                    console.log(data);
+                } else {
+                    console.log("Pas de données");
+                }
             })
             .catch((error) => {
                 console.error("Fetch error:", error);
