@@ -1,23 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Cart</title>
-</head>
-<body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="booking.html">Réservation</a></li>
-            <li><a href="cart.html">Panier</a></li>
-            <li><a href="Login">Login</a></li>
-          </ul>
-        </nav>
-      </header>
-      
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tickethack</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body>
+        <header class="bg-slate-50">
+            <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+                <div class="flex h-16 items-center justify-between">
+                    <div class="flex-1 md:flex md:items-center md:gap-12">
+                        <a class="block text-teal-600" href="/">
+                            <h1
+                                class="text-4xl font-bold underline text-teal-600"
+                            >
+                                Tickethack
+                            </h1>
+                        </a>
+                    </div>
+
+                    <div class="md:flex md:items-center md:gap-12">
+                        <nav aria-label="Global" class="hidden md:block">
+                            <ul class="flex items-center gap-6 text-sm">
+                                <li>
+                                    <a
+                                        class="text-gray-700 transition hover:text-gray-600/75 text-lg hover:underline"
+                                        href="/cart.html"
+                                    >
+                                        Cart
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a
+                                        class="text-gray-700 transition hover:text-gray-600/75 text-lg hover:underline"
+                                        href="/booking.html"
+                                    >
+                                        Bookings
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div id="divBtnLogin" class="flex items-center gap-4">
+                            <div class="sm:flex sm:gap-4">
+                                <a
+                                    id="btnLoginNavbar"
+                                    class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow hover:bg-teal-700"
+                                    href="/connexion.html"
+                                >
+                                    Login
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="cartSection" class="h-screen bg-slate-200 pt-28">
+            <div class="grid pt-12 place-content-center px-4">
+                <div class="text-center">
+                    <p
+                        class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+                    >
+                        You'r not connected, please connect
+                    </p>
+
+                    <a
+                        href="./connexion.html"
+                        class="mt-6 inline-block rounded bg-teal-600 px-5 py-3 text-sm font-medium text-white hover:bg-teal-700 focus:outline-none focus:ring"
+                    >
+                        Login page
+                    </a>
+                </div>
+            </div>
+        </section>
+        <script src="./cart.js"></script>
+    </body>
 </html>
